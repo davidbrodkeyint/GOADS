@@ -16,7 +16,7 @@
 #' @param top_left Character indicating Team name
 #' @param top_right Character listing contributors to the app
 #' @param bottom_left Character indicating correspondant email address
-#' @param top_right Character indicating the timestamp
+#' @param bottom_right Character indicating the timestamp
 #'
 #'
 #' @return A HTML Navbar component that can be rendered through renderUI
