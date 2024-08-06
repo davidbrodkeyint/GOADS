@@ -13,10 +13,10 @@
 #' @import glue
 #'
 #' @param app_name Character indicating App Name
-#' @param team_name Character indicating Team name
-#' @param app_maker_name Character listing contributors to the app
-#' @param email_address Character indicating correspondant email address
-#' @param last_updated Character indicating the timestamp
+#' @param top_left Character indicating Team name
+#' @param top_right Character listing contributors to the app
+#' @param bottom_left Character indicating correspondant email address
+#' @param top_right Character indicating the timestamp
 #'
 #'
 #' @return A HTML Navbar component that can be rendered through renderUI
@@ -25,8 +25,8 @@
 #' @examples
 #' x <- "Projext X,X-Men,John Doe and Bruce Wayne,john.doe@email.com, 02/02/2020 02:20:20"
 #'
-customHeader <- function(app_name, team_name, app_maker_name, 
-                         email_address, last_updated, left_icon, right_icon) {
+customHeader <- function(app_name, top_left, bottom_left, 
+                         top_right, bottom_right, left_icon, right_icon) {
   
   header_style = "color: #FFF; font-size: 15px; margin: 0; font-family: 'Inter', sans-serif;"
   div(
@@ -42,8 +42,8 @@ customHeader <- function(app_name, team_name, app_maker_name,
       left_icon,
       div(
         style = "float: right;",
-        h4(team_name, style = header_style),
-        h4(email_address, style = header_style)
+        h4(top_left, style = header_style),
+        h4(bottom_left, style = header_style)
       ),
     ),
     h1(app_name, style = "color: #FFF; family: 'Inter-ExtraBoldItalic'; 
@@ -53,8 +53,8 @@ customHeader <- function(app_name, team_name, app_maker_name,
          flex: 1;
          text-align: center;"),
     div(style = "display: flex; align-items: center;",
-        div(h4(app_maker_name, style = header_style),
-           h4(last_updated, style = header_style)),
+        div(h4(top_right, style = header_style),
+           h4(bottom_right, style = header_style)),
         div(style = "margin-left: 10px;", right_icon)
     )
   )
