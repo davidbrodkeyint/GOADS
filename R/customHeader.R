@@ -25,7 +25,8 @@
 #' @examples
 #' x <- "Projext X,X-Men,John Doe and Bruce Wayne,john.doe@email.com, 02/02/2020 02:20:20"
 #'
-customHeader <- function(app_name, team_name, app_maker_name, email_address, left_icon, right_icon) {
+customHeader <- function(app_name, team_name, app_maker_name, 
+                         email_address, last_updated, left_icon, right_icon) {
   
   header_style = "color: #FFF; font-size: 15px; margin: 0; font-family: 'Inter', sans-serif;"
   div(
@@ -52,7 +53,8 @@ customHeader <- function(app_name, team_name, app_maker_name, email_address, lef
          flex: 1;
          text-align: center;"),
     div(style = "display: flex; align-items: center;",
-        div(h4(app_maker_name, style = header_style)),
+        div(h4(app_maker_name, style = header_style),
+           h4(last_updated, style = header_style)),
         div(style = "margin-left: 10px;", right_icon)
     )
   )
