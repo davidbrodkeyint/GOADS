@@ -9,13 +9,13 @@ customHeader(app_name, team_name, app_maker_name, email_address, last_updated)
 \arguments{
 \item{app_name}{Character indicating App Name}
 
-\item{team_name}{Character indicating Team name}
+\item{top_right}{Character indicating Team name}
 
-\item{app_maker_name}{Character listing contributors to the app}
+\item{bottom_right}{Character listing contributors to the app}
 
-\item{email_address}{Character indicating correspondant email address}
+\item{top_left}{Character indicating correspondant email address}
 
-\item{last_updated}{Character indicating the timestamp}
+\item{bottom_left}{Character indicating the timestamp}
 }
 \value{
 A HTML Navbar component that can be rendered through renderUI
