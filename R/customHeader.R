@@ -53,8 +53,10 @@ customHeader <- function(app_name, top_left, bottom_left,
          flex: 1;
          text-align: center;"),
     div(style = "display: flex; align-items: center;",
-        div(h4(top_right, style = header_style),
-           h4(bottom_right, style = header_style)),
+        div(
+          h4(top_right, style = header_style),
+          h4(bottom_right, style = header_style)
+           ),
         div(style = "margin-left: 10px;", right_icon)
     )
   )
