@@ -1,10 +1,10 @@
-# intuGlobalOPS
+# GOADS
 
-Reusable functions for Global OPS
+Reusable functions for Global OPS Analytics
 
 ## Installation
 
-You can install the development version of intuGlobalOPS like so:
+You can install the development version of GOADS like so:
 
 ``` r
 library(devtools)
