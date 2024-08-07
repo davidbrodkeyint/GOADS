@@ -4,26 +4,25 @@
 \alias{customHeader}
 \title{customHeader}
 \usage{
-customHeader(app_name, team_name, app_maker_name, email_address, last_updated)
+customHeader(app_name, top_left, bottom_left, top_right, bottom_right, left_icon, right_icon)
 }
 \arguments{
-\item{app_name}{Character indicating App Name}
+\item{app_name}{Character indicating App Name in the middle of the header.}
 
-\item{top_right}{Character indicating Team name}
+\item{top_left}{Character indicating something to put on top left. Example: Team name}
 
-\item{bottom_right}{Character listing contributors to the app}
+\item{top_right}{Character indicating something to put on top right. Example: Contributors to the appplication}
 
-\item{top_left}{Character indicating correspondant email address}
+\item{bottom_right}{Character indicating something to put on bottom right. Example: last updated timestamp}
 
-\item{bottom_left}{Character indicating the timestamp}
+\item{bottom_left}{Character indicating something to put on bottom left. Example: email address}
 }
 \value{
-A HTML Navbar component that can be rendered through renderUI
+Provides a standardized header for a polished look in all applications.
 }
 \description{
 customHeader
 }
 \examples{
-x <- "Projext X,X-Men,John Doe and Bruce Wayne,john.doe@email.com, 02/02/2020 02:20:20"
-
+x <- "Political Candidate Favorability by U.S. State App, San Francisco Policy Insitute, Dr. Freddie Mercury and Attorney Lebron James, john.doe@email.com, 02/02/2020 02:20:20"
 }
